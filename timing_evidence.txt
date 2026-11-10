@@ -1,0 +1,9 @@
+=== GROWTH INVESTIGATION (10,000,000 CALLS) ===
+1. -O0 without inline:
+Mode: WITHOUT INLINE | Time for 10M calls: 38.3749 ms (Checksum: 2060000000)
+2. -O0 with inline:
+Mode: WITH INLINE | Time for 10M calls: 37.8435 ms (Checksum: 2060000000)
+3. -O2 without inline:
+Mode: WITHOUT INLINE | Time for 10M calls: 12.5054 ms (Checksum: 2060000000)
+4. -O2 with inline:
+Mode: WITH INLINE | Time for 10M calls: 3.69836 ms (Checksum: 2060000000)

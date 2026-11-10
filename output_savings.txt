@@ -1,0 +1,43 @@
+Initial balance: Rs. 50000
+
+Executing 12 transactions to observe behavior past capacity (10)...
+--- Buffer Full (10 Transactions) ---
+========================================
+         ATM MINI-STATEMENT            
+========================================
+Account Number: 1002345678
+Current Balance: Rs. 54700.00
+----------------------------------------
+Last 10 Transactions (Chronological):
+   1. CR  +Rs.  1000.00
+   2. DR  -Rs.   500.00
+   3. CR  +Rs.  2500.00
+   4. DR  -Rs.  1200.00
+   5. CR  +Rs.   800.00
+   6. DR  -Rs.   300.00
+   7. CR  +Rs.  4000.00
+   8. DR  -Rs.  1500.00
+   9. CR  +Rs.   600.00
+  10. DR  -Rs.   700.00
+========================================
+
+--- Adding 11th and 12th Transactions (Older transactions evicted) ---
+========================================
+         ATM MINI-STATEMENT            
+========================================
+Account Number: 1002345678
+Current Balance: Rs. 64249.00
+----------------------------------------
+Last 10 Transactions (Chronological):
+   1. CR  +Rs.  2500.00
+   2. DR  -Rs.  1200.00
+   3. CR  +Rs.   800.00
+   4. DR  -Rs.   300.00
+   5. CR  +Rs.  4000.00
+   6. DR  -Rs.  1500.00
+   7. CR  +Rs.   600.00
+   8. DR  -Rs.   700.00
+   9. CR  +Rs.  9999.00
+  10. DR  -Rs.   450.00
+========================================
+

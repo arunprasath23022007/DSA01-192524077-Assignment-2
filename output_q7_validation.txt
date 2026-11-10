@@ -1,0 +1,57 @@
+============================================================
+Q7 DAY-4 DESIGN CHALLENGE: DIAGNOSE, REDESIGN & VALIDATE
+Target: Q4 SavingsAccount Transaction History Scalability
+============================================================
+
+------------------------------------------------------------
+BENCHMARK: Capacity K = 10 (Original Requirement (Last 10 Txns)), Txns = 500000
+------------------------------------------------------------
+ORIGINAL (Shifting Array):
+  Time Elapsed      : 2.344 ms
+  Shift Operations  : 4499910 element moves
+  Checksum Check    : 14850445.000
+REDESIGNED (Circular Ring Buffer):
+  Time Elapsed      : 1.165 ms
+  Shift Operations  : 0 element moves (100% eliminated!)
+  Checksum Check    : 14850445.000
+SPEEDUP FACTOR      : 2.011x FASTER!
+
+------------------------------------------------------------
+BENCHMARK: Capacity K = 50 (Changed Requirement (Last 50 Txns)), Txns = 500000
+------------------------------------------------------------
+ORIGINAL (Shifting Array):
+  Time Elapsed      : 9.707 ms
+  Shift Operations  : 24497550 element moves
+  Checksum Check    : 14851575.000
+REDESIGNED (Circular Ring Buffer):
+  Time Elapsed      : 1.788 ms
+  Shift Operations  : 0 element moves (100% eliminated!)
+  Checksum Check    : 14851575.000
+SPEEDUP FACTOR      : 5.428x FASTER!
+
+------------------------------------------------------------
+BENCHMARK: Capacity K = 200 (Enterprise Scale (Last 200 Txns)), Txns = 500000
+------------------------------------------------------------
+ORIGINAL (Shifting Array):
+  Time Elapsed      : 25.447 ms
+  Shift Operations  : 99460200 element moves
+  Checksum Check    : 14856000.000
+REDESIGNED (Circular Ring Buffer):
+  Time Elapsed      : 1.724 ms
+  Shift Operations  : 0 element moves (100% eliminated!)
+  Checksum Check    : 14856000.000
+SPEEDUP FACTOR      : 14.757x FASTER!
+
+------------------------------------------------------------
+BENCHMARK: Capacity K = 500 (Audit Scale (Last 500 Txns)), Txns = 500000
+------------------------------------------------------------
+ORIGINAL (Shifting Array):
+  Time Elapsed      : 53.987 ms
+  Shift Operations  : 249250500 element moves
+  Checksum Check    : 14864850.000
+REDESIGNED (Circular Ring Buffer):
+  Time Elapsed      : 1.507 ms
+  Shift Operations  : 0 element moves (100% eliminated!)
+  Checksum Check    : 14864850.000
+SPEEDUP FACTOR      : 35.813x FASTER!
+

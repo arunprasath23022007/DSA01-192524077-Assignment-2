@@ -1,0 +1,12 @@
+====================================================
+Multi-Bus Architecture: Solving Static Member Limits
+====================================================
+[Route 101 - City Express] Arun: Seat 1
+[Route 101 - City Express] Bina: Seat 2
+[Route 101 - City Express] Cyril: Seat 3
+[Route 101 - City Express] Deepa: Waiting
+[Route 202 - Campus Shuttle] Eashwar: Seat 1
+[Route 202 - Campus Shuttle] Farah: Seat 2
+[Route 202 - Campus Shuttle] Gopal: Waiting
+Route 101 Issued: 3/3
+Route 202 Issued: 2/2

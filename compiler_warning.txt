@@ -1,0 +1,11 @@
+dangling_local_ref.cpp: In function ‘int& returnLocalReference()’:
+dangling_local_ref.cpp:6:12: warning: reference to local variable ‘localMark’ returned [-Wreturn-local-addr]
+    6 |     return localMark; // Triggers -Wreturn-local-addr warning
+      |            ^~~~~~~~~
+dangling_local_ref.cpp:5:9: note: declared here
+    5 |     int localMark = 95;
+      |         ^~~~~~~~~
+dangling_local_ref.cpp: In function ‘void overwriteStack()’:
+dangling_local_ref.cpp:11:18: warning: variable ‘garbage’ set but not used [-Wunused-but-set-variable]
+   11 |     volatile int garbage[16];
+      |                  ^~~~~~~

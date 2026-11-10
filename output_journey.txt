@@ -1,0 +1,13 @@
+--- Standard Run (Expected Output Check) ---
+205 false
+
+--- Correctness Check 1: Times on either side of noon ---
+t1 = 11:45, t2 = 12:15
+minutesBetween(11:45, 12:15) = 30 mins (Hand calc: 15m + 15m = 30m)
+earlier(11:45, 12:15) = true (Expected: true)
+earlier(12:15, 11:45) = false (Expected: false)
+
+--- Correctness Check 2: Same time twice ---
+t1 = 14:30, t2 = 14:30
+minutesBetween(14:30, 14:30) = 0 mins (Hand calc: 0m)
+earlier(14:30, 14:30) = false (Expected: false, neither is earlier)

@@ -1,0 +1,28 @@
+====================================================
+Task 02: Return by Reference - Examination Register
+====================================================
+
+Initial Marks: [ 78 85 92 64 89 ]
+
+--- Applying Moderation (+2) directly using L-Value Reference ---
+Calling: findHighestMark(marks, N) += 2;
+Marks after moderation (+2 to 92): [ 78 85 94 64 89 ]
+
+--- Direct Assignment to Function Call (L-Value on Left of '=') ---
+Calling: findHighestMark(marks, N) = 100;
+Marks after direct assignment (100): [ 78 85 100 64 89 ]
+
+--- Comparison of Access Paradigms ---
+Index approach  : Highest mark at index 2 = 100
+Pointer approach: Pointer to highest mark = 100 at address 0x7ffc6a095428
+
+--- Changed Condition: Growing std::vector Reference Invalidation ---
+Vector initial size: 3, capacity: 3
+Obtained reference to vecMarks[1]: 91 at 0x5bbe66499ef4
+Forcing reallocation by pushing 10 elements...
+Vector new size: 13, capacity: 24
+Old buffer address: 0x5bbe66499ef0
+New buffer address: 0x5bbe66499f70
+>> BUFFER REALLOCATION CONFIRMED: Memory block moved!
+>> Any raw reference or pointer to old buffer is now DANGLING / INVALID!
+>> However, index approach remains SAFE: vecMarks[1] = 91

@@ -1,0 +1,24 @@
+--- Standard Run (Expected Output Check) ---
+Asha: Seat 1
+Bala: Seat 2
+Chitra: Seat 3
+Dev: Waiting
+Issued: 3
+
+--- Calling ticket creation inside a function twice ---
+Notice: Because CAPACITY is 3 and 3 seats are already issued,
+all tickets created in subsequent calls get waiting list (seat 0)!
+
+--- Function issueBatch called for: TripB_Batch1 ---
+TripB_Batch1_1: Waiting
+TripB_Batch1_2: Waiting
+TripB_Batch1_3: Waiting
+TripB_Batch1_4: Waiting
+Issued total so far: 3
+
+--- Function issueBatch called for: TripB_Batch2 ---
+TripB_Batch2_1: Waiting
+TripB_Batch2_2: Waiting
+TripB_Batch2_3: Waiting
+TripB_Batch2_4: Waiting
+Issued total so far: 3

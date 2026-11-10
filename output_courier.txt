@@ -1,0 +1,28 @@
+========================================================
+Task 03: Courier Charge Calculator (Unambiguous Redesign)
+========================================================
+
+Call 1: charge(2)  [literal 2 is int]
+  -> [Selected: charge(int weightGrams, bool express, bool insured)]
+Result: Rs. 0.10
+
+Call 2: charge(2.0f)  [literal 2.0f is float]
+  -> [Selected: charge(double weightKg, bool express, bool insured)]
+Result: Rs. 100.00
+
+Call 3: charge(3.5)  [literal 3.5 is double]
+  -> [Selected: charge(double weightKg, bool express, bool insured)]
+Result: Rs. 175.00
+
+Call 4: charge(3.5, true)  [double, bool]
+  -> [Selected: charge(double weightKg, bool express, bool insured)]
+Result: Rs. 325.00
+
+Call 5: charge(3.5, true, true)  [double, bool, bool]
+  -> [Selected: charge(double weightKg, bool express, bool insured)]
+Result: Rs. 425.00
+
+Call 6: charge(Parcel{4.2, true, false})  [Parcel struct]
+  -> [Selected: charge(const Parcel& p)]
+Result: Rs. 360.00
+

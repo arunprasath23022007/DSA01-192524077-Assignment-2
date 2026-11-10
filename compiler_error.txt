@@ -1,0 +1,19 @@
+ambiguous_code.cpp: In function ‘int main()’:
+ambiguous_code.cpp:18:24: error: call of overloaded ‘charge(double)’ is ambiguous
+   18 |     std::cout << charge(2.5) << '\n';
+      |                  ~~~~~~^~~~~
+ambiguous_code.cpp:4:8: note: candidate: ‘double charge(double)’
+    4 | double charge(double weight) {
+      |        ^~~~~~
+ambiguous_code.cpp:12:8: note: candidate: ‘double charge(double, bool, bool)’
+   12 | double charge(double weight, bool express = false, bool insured = false) {
+      |        ^~~~~~
+ambiguous_code.cpp:19:24: error: call of overloaded ‘charge(double, bool)’ is ambiguous
+   19 |     std::cout << charge(2.5, true) << '\n';
+      |                  ~~~~~~^~~~~~~~~~~
+ambiguous_code.cpp:8:8: note: candidate: ‘double charge(double, bool)’
+    8 | double charge(double weight, bool express) {
+      |        ^~~~~~
+ambiguous_code.cpp:12:8: note: candidate: ‘double charge(double, bool, bool)’
+   12 | double charge(double weight, bool express = false, bool insured = false) {
+      |        ^~~~~~
